@@ -1,0 +1,219 @@
+/* Color Palette
+#071013 (Ink Black) - color 1
+#984447 (Burnt Rose) - color 2
+#9EC1A3 (Muted Teal) - color 3
+#EEE0CB (Champagne Mist) - color 4
+#7F7CAF (Lavender Gray) - color 5
+#F0FFF0 (Honeydew) - color 6
+*/
+
+/* Global styles 
+------------------------------------*/
+/* border box fix */
+html { 
+    box-sizing: border-box;
+}
+
+*, *:before, *:after { 
+    box-sizing: inherit;
+}
+
+body {
+    background: #EEE0CB;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+
+    font-family: "Google Sans", sans-serif;
+    color: #071013;
+}
+
+.content-wrap { 
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+
+    overflow: hidden;
+}
+
+main { 
+    margin: 0;
+    padding: 0; 
+}
+
+ul { 
+    list-style: none;
+}
+
+hr { 
+    border: 2px solid #7F7CAF;
+}
+
+section h2, h3, h4, h5, pre { 
+    color: #7F7CAF;
+}
+
+h1 { 
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top: 0;
+}
+
+h3 { 
+    font-size: 25px;
+    font-weight: medium;
+}
+
+h4 { 
+    font-size: 20px;
+    font-weight: normal;
+}
+
+h5 { 
+    font-size: 18px;
+}
+
+pre { 
+    color: honeydew;
+    font-size: 15px;
+}
+
+a { 
+    text-decoration: none;
+}
+
+p { 
+    margin: 5px 0;
+}
+
+.column-narrow, .column-wide { 
+    float: left; 
+}
+
+.column-narrow {
+    width: 30%; 
+    padding-right: 3%; 
+    min-height: 175px;
+}
+
+.column-wide { 
+    width: 70%; 
+    min-height: 225px;
+    
+    padding-left: 3%;
+    border-left: 2px solid #7F7CAF;
+}
+
+/* Header & Footer 
+------------------------------------*/
+.site-header, .site-footer { 
+    background: #984447;
+    color: honeydew;
+    
+    align-items: center;
+    padding: 10px 20px;
+
+    font-family: Montserrat, sans-serif;
+}
+
+.site-header hr, .site-footer hr { 
+    border: 0.5px solid #7F7CAF;
+}
+
+.contact-info a {
+    padding: 10px; 
+    display: inline-block;
+}
+
+header { 
+    border-bottom: 2px solid #7F7CAF;
+}
+
+footer { 
+    text-align: center;
+    border-top: 2px solid #7F7CAF;
+    text-align: center;
+}
+
+header h1 { 
+    margin: 0;
+}
+
+header h2 { 
+    margin: 0; 
+
+    font-size: 25px;
+}
+
+.profile-img { 
+    border-radius: 50%;
+}
+
+/* Projects & Education Sections
+------------------------------------*/
+.projects, .education { 
+    margin: 0;     
+}
+
+.projects {
+    background: honeydew;
+    border-bottom: 2px solid #7F7CAF;
+}
+
+.education { 
+    background: #071013;
+    color: honeydew;
+}
+
+.education h3, .projects h3 { 
+    border-bottom: 1px solid #7F7CAF;
+}
+
+.major { 
+    font-size: 22px;
+}
+
+/* Additional Styles 
+------------------------------------*/
+.fa-envelope, .fa-github { 
+    font-size: 50px;
+    color: honeydew;
+    transition: color 0.3s;
+}
+
+a:hover h3, i:hover { 
+    color: #9EC1A3;
+}
+
+.line-up { 
+    display: inline-flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 20px;
+}
+
+.right { 
+    margin-left: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.thin-line { 
+    border: 1px solid #7F7CAF;
+
+    margin: 0;
+}
+
+.date-box { 
+    background: #7F7CAF;
+    border-radius: 20px;
+    color: honeydew;
+    display: inline-block;
+    padding: 0 10px;
+}

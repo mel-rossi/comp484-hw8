@@ -14,177 +14,189 @@
         <link href="https://fonts.googleapis.com/css2?family=Google+Sans:opsz,wght@17..18,400..700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="css/styles.css" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css">   
     </head>
 
     <body>
         <!-- // Intro -->
-        <header role="banner" class="site-header">
-        <div class="content-wrap">
+        <header role="banner" class="site-header" id="about">
+            <nav class="display center"> 
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+                <a href="resume.pdf" class="download" download>Download PDF</a>
+            </nav>
+        
+            <div class="content-wrap">
 
-            <img src="images/placeholder.jpeg" alt="Mel Rossi Rodrigues" class="profile-img column-narrow">
+                <img src="images/placeholder.jpeg" alt="Mel Rossi Rodrigues" class="profile-img column-narrow">
 
-            <div class="column-wide">
-                <h1>Mel Rossi Rodrigues</h1>
-                
-                <hr>
+                <div class="column-wide">
+                    <h1>Mel Rossi Rodrigues</h1>
+                    
+                    <hr>
 
-                <h2>Software Developer</h2>
+                    <h2>Software Developer</h2>
 
-                <p>Computer Science student with experience in backend development and web technologies.</p>
+                    <p>Computer Science student with experience in backend development and web technologies.</p>
+                </div>
+
             </div>
-        </div>
         </header>
         
         <main> 
             <!-- // Projects -->
-            <section class="projects">
-            <div class="content-wrap">
+            <section class="projects" id="projects">
+                <div class="content-wrap">
 
-                <h2>Projects</h2>
+                    <h2>Projects</h2>
 
-                <!-- Project 1 -->
-                <article>
-                    <!-- Project Details: copy this whole block to add more jobs -->
-                    <div class="column-narrow"> 
-                        <a href="https://github.com/mel-rossi/Retro-Video-Games-Management-System" target="_blank">
-                            <h3>Retro Video Game Management System ▷</h3>
-                        </a>
-                        <p>Database Management System for COMP 380 Group Project</p>
-                        <p class="date-box"><b>Sep 2024 - Dec 2024</b></p>
-                    </div>
-                    
-                    <!-- Add as many paragraphs as you need. -->
-                    
-                    <div class="column-wide">
-                        <h4>Project Summary</h4>
-                        <p>
-                            Developed a Staff-Only System to manage a retro video games database 
-                            using Python, JavaScript, and HTML/CSS.
-                        </p>
-                    
-                        <!-- This list can be deleted if you don't want to use it. -->
-                    
-                        <h4>Project Role:</h4>
-                        <ul>
-                            <li>Chief Backend Developer & Programmer</li>
-                            <li>Cleaned up and maintained backend Python code</li>
-                            <li>Responsible for designing backend logic and functionality for the system</li>
-                        </ul>
-                    </div>
-                    <!-- end of Project Details block. -->
-                </article>
+                    <!-- Project 1 -->
+                    <article>
+                        <!-- Project Details: copy this whole block to add more jobs -->
+                        <div class="column-narrow"> 
+                            <a href="https://github.com/mel-rossi/Retro-Video-Games-Management-System" target="_blank">
+                                <h3>Retro Video Game Management System ▷</h3>
+                            </a>
+                            <p>Database Management System for COMP 380 Group Project</p>
+                            <p class="date-box"><b>Sep 2024 - Dec 2024</b></p>
+                        </div>
+                        
+                        <!-- Add as many paragraphs as you need. -->
+                        
+                        <div class="column-wide">
+                            <h4>Project Summary</h4>
+                            <p>
+                                Developed a Staff-Only System to manage a retro video games database 
+                                using Python, JavaScript, and HTML/CSS.
+                            </p>
+                        
+                            <!-- This list can be deleted if you don't want to use it. -->
+                        
+                            <h4>Project Role:</h4>
+                            <ul>
+                                <li>Chief Backend Developer & Programmer</li>
+                                <li>Cleaned up and maintained backend Python code</li>
+                                <li>Responsible for designing backend logic and functionality for the system</li>
+                            </ul>
+                        </div>
+                        <!-- end of Project Details block. -->
+                    </article>
 
-                <hr class="thin-line">
+                    <hr class="thin-line">
 
-                <!-- Project 2 -->
-                <article>
-                    <!-- Project Details: copy this whole block to add more jobs -->
-                    <div class="column-narrow">
-                        <a href="https://github.com/mel-rossi/DQN-Atari-Agent" target="_blank">
-                            <h3>DQN Atari Agent ▷</h3>
-                        </a>
-                        <p>Reinforcement Learning Deep Q-Network Agent Training for COMP 542 Group Project</p>
-                        <p class="date-box"><b>Oct 2026 - Dec 2026</b></p>
-                    </div>
-                    
-                    <!-- Add as many paragraphs as you need. -->
-                    <div class="column-wide"> 
-                        <h4>Project Summary</h4>
-                        <p>Trained a Deep Q-Network agent to play Atari games using Python, Stable Baselines3 (SB3) and PyTorch.</p>
-                    
-                    
-                        <!-- This list can be deleted if you don't want to use it. -->
-                    
-                        <h4>Project Role:</h4>
-                        <ul>
-                            <li>Main Programmer</li>
-                            <li>Cleaned and maintained code</li>
-                            <li>Responsible for Set Up instructions and ease of use</li>
-                            <li>Created initial project framework attempt using Dopamine before switching to Stable Baselines3 (SB3) and PyTorch</li>
-                        </ul>
-                    </div>
-                    <!-- end of Project Details block. -->
-                </article>
+                    <!-- Project 2 -->
+                    <article>
+                        <!-- Project Details: copy this whole block to add more jobs -->
+                        <div class="column-narrow">
+                            <a href="https://github.com/mel-rossi/DQN-Atari-Agent" target="_blank">
+                                <h3>DQN Atari Agent ▷</h3>
+                            </a>
+                            <p>Reinforcement Learning Deep Q-Network Agent Training for COMP 542 Group Project</p>
+                            <p class="date-box"><b>Oct 2026 - Dec 2026</b></p>
+                        </div>
+                        
+                        <!-- Add as many paragraphs as you need. -->
+                        <div class="column-wide"> 
+                            <h4>Project Summary</h4>
+                            <p>Trained a Deep Q-Network agent to play Atari games using Python, Stable Baselines3 (SB3) and PyTorch.</p>
+                        
+                        
+                            <!-- This list can be deleted if you don't want to use it. -->
+                        
+                            <h4>Project Role:</h4>
+                            <ul>
+                                <li>Main Programmer</li>
+                                <li>Cleaned and maintained code</li>
+                                <li>Responsible for Set Up instructions and ease of use</li>
+                                <li>Created initial project framework attempt using Dopamine before switching to Stable Baselines3 (SB3) and PyTorch</li>
+                            </ul>
+                        </div>
+                        <!-- end of Project Details block. -->
+                    </article>
 
-            </div>
+                </div>
             </section>
 
             
 
             <!-- // Education -->
-            <section class="education">
-            <div class="content-wrap">
-                
-                <h2>Education</h2>
+            <section class="education img-bg" id="education">
+                <div class="content-wrap alpha-bg">
+                    
+                    <h2>Education</h2>
 
-                <!-- School details: copy this whole block to add more schools. -->
-                <a href="https://www.csun.edu/engineering-computer-science/computer-science" 
-                 target="_blank">
-                    <h3>California State University, Northridge (CSUN) ▷</h3>
-                </a>
+                    <!-- School details: copy this whole block to add more schools. -->
+                    <a href="https://www.csun.edu/engineering-computer-science/computer-science" 
+                    target="_blank">
+                        <h3>California State University, Northridge (CSUN) ▷</h3>
+                    </a>
 
-                <p class="major"><strong>Bachelor of Science in Computer Science</strong></p>
-                <p class="date-box"><b>Expected Graduation</b>: 2027</p>
-                
-                <!-- Add as many paragraphs as you need. -->
-                <p>
-                    <h4>Relevant coursework:</h4> 
-                
-                    <ul>
-                        <li><b>(PHIL 230)</b> Introduction to Formal Logic</li>
-                        <li><b>(MATH 150A)</b> Calculus I</li>
-                        <li><b>(MATH 150B)</b> Calculus II</li>
-                        <li><b>(MATH 262)</b> Introduction to Linear Algebra</li>
-                        <li><b>(MATH 340)</b> Introduction to Probability & Statistics</li>
-                        <li><b>(COMP 110)</b> Introduction to Algorithms & Programming</li>
-                        <li><b>(COMP 122)</b> Computer Architecture & Assembly Language</li>
-                        <li><b>(COMP 182)</b> Data Structures & Program Design</li>
-                        <li><b>(COMP 222)</b> Computer Organization</li>
-                        <li><b>(COMP 256)</b> Discrete Structures for Computer Science</li>
-                        <li><b>(COMP 282)</b> Advanced Data Structures</li>
-                        <li><b>(COMP 333)</b> Concepts of Programming Languages</li>
-                        <li><b>(COMP 380)</b> Introduction to Software Engineering</li>
-                        <li><b>(COMP 310)</b> Automata, Languages & Computation</li>
-                        <li><b>(COMP 442)</b> Machine Learning Principles</li>
-                        <li><b>(COMP 482)</b> Algorithm Design & Analysis</li>
-                        <li><b>(COMP 542)</b> Machine Learning</li>
-                        <li><b>(COMP 440)</b> Database Design</li>
-                        <li><b>(COMP 484)</b> Web Engineering I</li>
-                    </ul>
-                </p>
-                <!-- End of school details. -->
+                    <p class="major"><strong>Bachelor of Science in Computer Science</strong></p>
+                    <p class="date-box"><b>Expected Graduation</b>: 2027</p>
+                    
+                    <!-- Add as many paragraphs as you need. -->
+                    <p>
+                        <h4>Relevant coursework:</h4> 
+                    
+                        <ul>
+                            <li><b>(PHIL 230)</b> Introduction to Formal Logic</li>
+                            <li><b>(MATH 150A)</b> Calculus I</li>
+                            <li><b>(MATH 150B)</b> Calculus II</li>
+                            <li><b>(MATH 262)</b> Introduction to Linear Algebra</li>
+                            <li><b>(MATH 340)</b> Introduction to Probability & Statistics</li>
+                            <li><b>(COMP 110)</b> Introduction to Algorithms & Programming</li>
+                            <li><b>(COMP 122)</b> Computer Architecture & Assembly Language</li>
+                            <li><b>(COMP 182)</b> Data Structures & Program Design</li>
+                            <li><b>(COMP 222)</b> Computer Organization</li>
+                            <li><b>(COMP 256)</b> Discrete Structures for Computer Science</li>
+                            <li><b>(COMP 282)</b> Advanced Data Structures</li>
+                            <li><b>(COMP 333)</b> Concepts of Programming Languages</li>
+                            <li><b>(COMP 380)</b> Introduction to Software Engineering</li>
+                            <li><b>(COMP 310)</b> Automata, Languages & Computation</li>
+                            <li><b>(COMP 442)</b> Machine Learning Principles</li>
+                            <li><b>(COMP 482)</b> Algorithm Design & Analysis</li>
+                            <li><b>(COMP 542)</b> Machine Learning</li>
+                            <li><b>(COMP 440)</b> Database Design</li>
+                            <li><b>(COMP 484)</b> Web Engineering I</li>
+                        </ul>
+                    </p> 
+                    <!-- End of school details. -->
 
-            </div>
+                </div>
             </section>
         </main>
         
         <!-- // Footer & contact info -->
-        <footer role="contentinfo" class="site-footer center">
-        <div class="content-wrap contact-info">
+        <footer role="contentinfo" class="site-footer center" id="contact">
+            <div class="content-wrap contact-info">
 
-            <h2>Let's Keep in Touch!</h2>
+                <h2>Let's Keep in Touch!</h2>
+                    
+                <!-- Social media and contact links. -->
+                <ul class="line-up">
+                    <li class=>
+                        <a href="mailto:melani.r.rodrigues@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                       
+                        <p>melani.r.rodrigues@gmail.com</p>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/mel-rossi" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <p>mel-rossi</p>
+                    </li>
+                </ul>
+
+                <hr>
                 
-            <!-- Social media and contact links. -->
-            <ul class="line-up">
-                <li>
-                    <a href="mailto:melani.r.rodrigues@gmail.com">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://github.com/mel-rossi" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-
-            <hr>
-            
-            <pre>Copyright © 2026 Mel Rossi Rodrigues. All rights reserved.</pre>
-            
-        </div>
+                <pre>Copyright © 2026 Mel Rossi Rodrigues. All rights reserved.</pre>
+                
+            </div>
         </footer>
 
     </body>

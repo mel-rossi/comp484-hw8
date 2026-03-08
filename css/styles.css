@@ -18,6 +18,32 @@ html {
     box-sizing: inherit;
 }
 
+.content-wrap { 
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+
+    overflow: hidden;
+}
+
+.column-narrow, .column-wide { 
+    float: left; 
+}
+
+.column-narrow {
+    width: 30%; 
+    padding-right: 3%; 
+    min-height: 175px;
+}
+
+.column-wide { 
+    width: 70%; 
+    min-height: 225px;
+    
+    padding-left: 3%;
+    border-left: 2px solid #7F7CAF;
+}
+
 body {
     background: #EEE0CB;
     margin: 0;
@@ -27,14 +53,6 @@ body {
 
     font-family: "Google Sans", sans-serif;
     color: #071013;
-}
-
-.content-wrap { 
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 50px;
-
-    overflow: hidden;
 }
 
 main { 
@@ -90,34 +108,17 @@ p {
     margin: 5px 0;
 }
 
-.column-narrow, .column-wide { 
-    float: left; 
-}
-
-.column-narrow {
-    width: 30%; 
-    padding-right: 3%; 
-    min-height: 175px;
-}
-
-.column-wide { 
-    width: 70%; 
-    min-height: 225px;
-    
-    padding-left: 3%;
-    border-left: 2px solid #7F7CAF;
-}
-
 /* Header & Footer 
 ------------------------------------*/
 .site-header, .site-footer { 
     background: #984447;
     color: honeydew;
-    
-    align-items: center;
-    padding: 10px 20px;
 
-    font-family: Montserrat, sans-serif;
+    font-family: Monsterrat, sans-serif;
+}
+
+.site-header { 
+    padding-top: 60px;
 }
 
 .site-header hr, .site-footer hr { 
@@ -127,6 +128,42 @@ p {
 .contact-info a {
     padding: 10px; 
     display: inline-block;
+}
+
+.profile-img { 
+    border-radius: 50%;
+}
+
+.display a { 
+    color: #7F7CAF;
+    border: 1px solid #071013;
+    background-color: rgba(240, 255, 240, 0.7); 
+
+    padding: 10px; 
+    margin: 0 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    
+    display: inline-block;
+}
+
+a.download { 
+    border-style: dashed;
+}
+
+nav { 
+    background: #EEE0CB;
+    font-weight: bold;
+    padding: 10px 15px;
+
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 10;
+}
+
+header, section, footer { 
+    scroll-margin-top: 60px;
 }
 
 header { 
@@ -139,6 +176,10 @@ footer {
     text-align: center;
 }
 
+footer ul p { 
+    display: none;
+}
+
 header h1 { 
     margin: 0;
 }
@@ -149,24 +190,29 @@ header h2 {
     font-size: 25px;
 }
 
-.profile-img { 
-    border-radius: 50%;
-}
-
 /* Projects & Education Sections
 ------------------------------------*/
 .projects, .education { 
     margin: 0;     
 }
 
+/* Projects Section */
 .projects {
     background: honeydew;
     border-bottom: 2px solid #7F7CAF;
 }
 
+/* Education Section */
 .education { 
-    background: #071013;
     color: honeydew;
+
+    background-image: linear-gradient(rgba(7, 16, 19, 0.7), rgba(152,68,71, 0.8)), 
+                      url(../images/CSUN.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #071013;
 }
 
 .education h3, .projects h3 { 
@@ -185,7 +231,7 @@ header h2 {
     transition: color 0.3s;
 }
 
-a:hover h3, i:hover { 
+i:hover, a:hover, a:hover h3 { 
     color: #9EC1A3;
 }
 
@@ -194,10 +240,6 @@ a:hover h3, i:hover {
     flex-direction: row;
     padding: 0;
     gap: 20px;
-}
-
-.right { 
-    margin-left: auto;
 }
 
 .center {
@@ -212,8 +254,48 @@ a:hover h3, i:hover {
 
 .date-box { 
     background: #7F7CAF;
-    border-radius: 20px;
     color: honeydew;
+
     display: inline-block;
+    border-radius: 20px;
     padding: 0 10px;
+}
+
+/* Format for PDF Printing */ 
+@media print {
+
+    .site-header { /* Remove positioning and padding */
+        padding-top: 0;
+    }
+
+    .content-wrap { 
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .education, .projects { /* Prevent page breaks inside education and project sections */
+        break-inside: avoid;
+    }
+
+    body, .projects, .education, .site-header, .site-footer { /* Remove backgrounds */
+        background: white !important;
+        color: black !important;
+    }
+
+    nav { /* Hide nav */
+        display: none;
+    }
+
+    article { /* Prevent page breaks inside articles */
+        break-inside: avoid;
+    }
+
+    h2, h3, h4 { 
+        break-after: avoid;
+    }
+
+    footer ul p { /* Show text for email & github account */
+        display: block;
+        font-size: 10px;
+    }
 }

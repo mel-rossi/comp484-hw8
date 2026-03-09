@@ -206,12 +206,15 @@ header h2 {
 .education { 
     color: honeydew;
 
-    background-image: linear-gradient(rgba(7, 16, 19, 0.7), rgba(152,68,71, 0.8)), 
+    background-image: linear-gradient(rgba(7, 16, 19, 0.7), 
+                                      rgba(152,68,71, 0.8)), 
                       url(../images/CSUN.jpg);
+
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
     background-color: #071013;
 }
 
@@ -261,7 +264,8 @@ i:hover, a:hover, a:hover h3 {
     padding: 0 10px;
 }
 
-/* Format for PDF Printing */ 
+/* Format for PDF Printing 
+------------------------------------*/
 @media print {
 
     .site-header { /* Remove positioning and padding */
